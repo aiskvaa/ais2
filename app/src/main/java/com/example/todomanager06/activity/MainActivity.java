@@ -1,5 +1,4 @@
 package com.example.todomanager06.activity;
-
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.navigation.NavController;
 import androidx.navigation.fragment.NavHostFragment;
@@ -8,9 +7,11 @@ import android.os.Bundle;
 
 import com.example.todomanager06.R;
 import com.example.todomanager06.databinding.ActivityMainBinding;
+import com.tbuonomo.viewpagerdotsindicator.DotsIndicator;
 
 public class MainActivity extends AppCompatActivity {
     private ActivityMainBinding binding;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,5 +25,8 @@ public class MainActivity extends AppCompatActivity {
         NavHostFragment navHostFragment =
                 (NavHostFragment) getSupportFragmentManager().findFragmentById(R.id.nav_host_fragment);
         NavController navController = navHostFragment.getNavController();
+
+
     }
+
 }

@@ -38,5 +38,6 @@ public class MainBoardFragment extends Fragment {
         list.add(new ViewPagerModel("3", "3", R.drawable.todo_illustration));
         adapter = new ViewPagerAdapter(list);
         binding.viewpager.setAdapter(adapter);
+        binding.dotsIndicator.setViewPager2(binding.viewpager);
     }
 }
